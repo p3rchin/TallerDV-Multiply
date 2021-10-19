@@ -1,12 +1,32 @@
+/**
+ * Package containing the class
+ */
 package co.edu.unbosque.controller;
-
 import co.edu.unbosque.model.MatrixMultiplication;
 import co.edu.unbosque.view.View;
 
+/**
+ * 
+ * @author Santiago Acevedo Rodríguez and Fabián Camilo Gómez Céspedes
+ *
+ */
 public class Controller {
+	
+	/**
+	 * matrix is the instance of MatrixMultiplication.
+	 */
 	private MatrixMultiplication matrix;
+	/**
+	 * view is the instance of View.
+	 */
 	private View view;
 
+	/**
+	 * This constructor define the instances.
+	 * <b>pre</b>Must exist declarations of the instances.<br>
+	 * <b>post</b>The instances of a class.<br>
+	 * @throws Exception is an event when a error occurred.
+	 */
 	public Controller() {
 		matrix = new MatrixMultiplication();
 		view = new View();
@@ -14,6 +34,12 @@ public class Controller {
 
 	}
 
+	
+	/**
+	 * This method is the execution of the program.
+	 * <b>pre</b>The instances in the constructor must be exist.<br>
+	 * <b>post</b>The program should show results.<br>
+	 */
 	public void run() {
 		String message = "\n————————————————————————————————————————————————\n"
 				+ "         BosqueSW - Divide & Conquer\n" + "————————————————————————————————————————————————\n"

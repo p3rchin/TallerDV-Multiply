@@ -1,7 +1,25 @@
+/**
+ * Package containing the class
+ */
 package co.edu.unbosque.model;
 
+
+/**
+ * 
+ * @author Santiago Acevedo Rodríguez and Fabián Camilo Gómez Céspedes
+ *
+ */
 public class MatrixMultiplication {
 	
+	
+	/**
+	 * This method multiply each row by each column.
+	 * <b>pre</b>The first matrix must have the columns equal two the rows of the second one.<br>
+	 * <b>post</b>The multiplication would be done.<br>
+	 * @param a is a matrix. a must be != " " and != null.
+	 * @param b is a matrix. b must be != " " and != null.
+	 * @return c: the multiplication matrix.
+	 */
 	public static int[][] multiply(int[][] a, int[][] b) {
 	    int[][] c = new int[a.length][b[0].length];
 	    // se comprueba si las matrices se pueden multiplicar
@@ -20,6 +38,20 @@ public class MatrixMultiplication {
 	     */
 	    return c;
 	}
+	
+	/**
+	 * This method multiply each row by each column.
+	 * <b>pre</b>The matrixes must have the same sizes.<br>
+	 * <b>post</b>The multiplication would be done.<br>
+	 * @param A is a matrix. A must be != " " and != null.
+	 * @param B is a matrix. B must be != " " and != null.
+	 * @param rowA is a number of rows of A. rowA != null and rowA >= 0.
+	 * @param colA is a number of columns of A. colA != null and colA >= 0.
+	 * @param rowB is a number of rows of B. rowB != null and rowB >= 0.
+	 * @param colB is a number of columns of B. colB != null and colB >= 0.
+	 * @param size is the size of the matrixes. size != null and size > 0.
+	 * @return C: the multiplication matrix.
+	 */
 	
 	public static int[][] multiplyStrassen(int[][] A, int[][] B, int rowA, int colA, int rowB, int colB, int size) {
 		int[][] C = new int[size][size];
@@ -52,6 +84,9 @@ public class MatrixMultiplication {
 	}
 
 	/**
+	 * This method support the method of the multiplication by Strassen.
+	 * <b>pre</b>Must be exist an instance of the multiplyStrassen method.<br>
+	 * <b>post</b>The partition of the matrixes should be ran.<br>
 	 * @param C    Matrix of size n x n to add to
 	 * @param A    A matrix of size n/2 x n/2 to add from
 	 * @param B    A matrix of size n/2 x n/2 to add from

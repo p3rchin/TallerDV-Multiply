@@ -1,7 +1,15 @@
+/**
+ * Package containing the class
+ */
 package co.edu.unbosque.view;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Santiago Acevedo Rodríguez and Fabián Camilo Gómez Céspedes
+ *
+ */
 public class View {
 	
 	/**
