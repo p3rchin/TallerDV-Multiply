@@ -25,7 +25,6 @@ public class Controller {
 	 * This constructor define the instances.
 	 * <b>pre</b>Must exist declarations of the instances.<br>
 	 * <b>post</b>The instances of a class.<br>
-	 * @throws Exception is an event when a error occurred.
 	 */
 	public Controller() {
 		matrix = new MatrixMultiplication();

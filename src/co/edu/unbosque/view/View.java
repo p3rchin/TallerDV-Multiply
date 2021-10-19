@@ -33,7 +33,6 @@ public class View {
 	/**
 	 * This method is for read data.
 	 * <b>post</b> The String returned must be different of null.<br>
-	 * @param pSms is parameter String for read data.
 	 * @return is the String returned that is captured.
 	 */	
 	
